@@ -4,7 +4,7 @@
 #include <Xm/Xm.h>
 #include <Xm/Label.h>
 #include <Xm/MainW.h>
-#include "MenuSupport.h"
+//#include "MenuSupport.h"
 #include <X11/Xatom.h>
 #include <stdio.h>
 

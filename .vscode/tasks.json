@@ -5,19 +5,20 @@
             "label": "C/C++: clang アクティブなファイルのビルド",
             "command": "/usr/bin/clang",
             "args": [
-                "-fcolor-diagnostics",
+               "-fcolor-diagnostics",
                 "-fansi-escape-codes",
-                "-Wno-register",
                 "-I/opt/local/include/",
                 "-L/opt/local/lib/",
                 "-g",
-                "${file}",
+                "${workspaceFolder}/*.c",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.a",
                 "-l",
                 "Xm",
                 "-l",
-                "Xt"
+                "Xt",
+                "-l",
+                "X11"
             ],
             "options": {
                 "cwd": "${fileDirname}"
